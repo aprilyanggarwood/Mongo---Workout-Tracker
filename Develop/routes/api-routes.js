@@ -4,6 +4,7 @@ const express = require("express");
 const router = express.Router();
 
 /** Add New Exercise to Workout **/
+//const {body} = req
 router.post("/api/workouts", ({ body }, res) => {
   Workout.create({})
     .then((dbWorkout) => {
@@ -18,6 +19,7 @@ router.post("/api/workouts", ({ body }, res) => {
 // Then push exercise onto Exercise array
 // new: true - always create a new one
 // findByIdAndUpdate() method returns the object that matched the condition before the update operation
+//const {params, body} = req
 router.put("/api/workouts/:id", ({ params, body }, res) => {
   console.log("PARAMS", body, params);
 
