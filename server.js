@@ -17,10 +17,10 @@ app.use(express.static("public"));
 let db = mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/workouttrackerDB",
   {
-    useUnifiedTopology: true,
     useNewUrlParser: true,
-    useFindAndModify: false,
+    useUnifiedTopology: true,
     useCreateIndex: true,
+    useFindAndModify: false,
   }
 );
 
