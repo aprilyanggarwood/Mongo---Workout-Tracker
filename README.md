@@ -54,7 +54,7 @@ This Workout Tracker application is a full-stack web application. The data of wo
 
 ## Deploy
 
-This Note Taker application is deployed on [Heroku](https://fathomless-scrubland-37701.herokuapp.com/?id=6008cd63a077450015712163)
+This Workout Tracker application is deployed on [Heroku](https://fathomless-scrubland-37701.herokuapp.com/?id=6008cd63a077450015712163)
 
 ## License
 
