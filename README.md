@@ -1,61 +1,65 @@
-# Unit 17 NoSQL Homework: Workout Tracker
+# Workout Tracker : MongoDB & Mongoose
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+## Description
 
-## User Story
+A user can be motivated by using this Workout Tracker Application to track his/her resistance and cardio exercises and workouts progress in order to successfully reach his/her fitness goals.
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+## Table of Contents
 
-## Business Context
+- [Build-In](#Build-In)
+- [Installation](#Installation)
+- [Useage](#Useage)
+- [Screenshots](#screenshots)
+- [Demo](#demo)
+- [Deploy](#Deploy) - [Heroku](https://fathomless-scrubland-37701.herokuapp.com/?id=6008cd63a077450015712163)
+- [License](#license)
+- [Questions](#questions)
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+# Build-In
 
-## Acceptance Criteria
+This Workout Tracker application is a full-stack web application. The data of workouts is saved in a `Mongo database`. The following technologies are used in this application:
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+- `NodeJS` : Dependencies for this project include the node modules:
 
-The user should be able to:
+  - `Mongoose` for setting up the models for `MongoDB` ( NoSQL)
+  - `Express`: for setting up the node server
+  - `Morgan` for adding the http request logger
 
-  * Add exercises to the most recent workout plan.
+- Chart.js: Used to build multiple visualized charts for each workout and exercise
 
-  * Add new exercises to a new workout plan.
+## Installation
 
-  * View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
+- `Git clone` the app repo to your local machine
+- Run `npm install` in your terminal
+- After the `dependencies` have been installed , then run `node seeders/seed.js`
+- If `seed` is successful run, then start your `server` by doing `node server.js`.
 
-  * View the total duration of each workout from the past seven workouts on the `stats` page.
+## Usage
 
-> **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
+- This workout tracker application is a useful application for user to create, track, and view his/her resistance and cardio exercises up to the last seven workouts.
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+- When the user give his/her workout data through submitting the New Workout form or the Continue Workout form in the `initial page` of this application, then this application will generate the summary of the last workout which will be displayed with details that include the date and the duration, and the make up’s data of weight, sets, reps, and distance in the Last Workout area.
 
-  * [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
+- user is able to track the data of exercises performances, the data of workout durations, and the data of pounds lifted of resistance exercises, up to the last 7 workouts through the visualized two pie charts, one line chart, and one bar chart in the `stats page`.
 
-  * [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+## Screenshots
 
-## Commit Early and Often
+![app-screenshot1](./public/image/app-screenshot1.png)
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
+![app-screenshot2](./public/image/app-screenshot2.png)
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+## Demo
 
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+![DemoLink](./public/image/Fitness-Tracker.gif)
 
-Follow these guidelines for committing:
+## Deploy
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+This Note Taker application is deployed on [Heroku](https://fathomless-scrubland-37701.herokuapp.com/?id=6008cd63a077450015712163)
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+## License
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-* Test your application before you commit to ensure functionality at every step in the development process.
+## Questions
 
-We want you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the GitHub repository
+If you have any questions about this application, please feel free to reach me via the link of my GitHub and my Email: aprilyanggarwood@gmail.com
